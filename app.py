@@ -9,7 +9,7 @@ st.set_page_config(page_title="Prediksi Harga Rumah", layout="wide")
 
 #Muat model yang sudah dilatih
 try:
-    model = joblib.load('boston_model.pkl')
+    model = joblib.load('boston_random_forest_model.pkl')
 except FileNotFoundError:
     st.error("File model 'boston_model.pkl' tidak ditemukan. Jalankan 'train_model.py' terlebih dahulu.")
     st.stop() #Menghentikan eksekusi jika model tidak ada
