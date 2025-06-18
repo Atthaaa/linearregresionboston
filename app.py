@@ -63,7 +63,7 @@ if submit:
     prediction = model.predict(features_array)[0]
     
     #Hasil prediksi dalam ribuan dolar, jadi kita kalikan 1000
-    predicted_price = prediction * 1000
+    predicted_price = prediction
     
     # Menampilkan hasil
     st.subheader("Hasil Prediksi")
